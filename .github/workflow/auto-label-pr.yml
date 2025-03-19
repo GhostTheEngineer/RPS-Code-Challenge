@@ -1,0 +1,51 @@
+name: Auto Label & Welcome PR
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  label-and-welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add "pending" label
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: ["pending"]
+            });
+
+      - name: Post welcome comment
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: "👋 Thanks for your submission! Your PR has been labeled as a `pending`. This means I have not yet seen it and considered as a valid submission. Once I have done so, the label will become `submission`. Feel free to check out other PRs, discuss optimizations, and improve your solution!"
+            });
+
+  remove-pending-label:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'labeled' && github.event.label.name == 'submission'
+    
+    steps:
+      - name: Remove "pending" label when "submission" is added
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              name: "pending"
+            });
