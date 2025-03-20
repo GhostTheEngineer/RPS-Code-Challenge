@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Release\\driver.obj",
+            "outputs": [
+                "RPS-Code.cbe8da37\\x64\\Release\\driver.ixx_5D468C2F91420043.ifc.dt.module.json",
+                "RPS-Code.cbe8da37\\x64\\Release\\driver.ixx_5D468C2F91420043.ifc.dt.d.json",
+                "RPS-Code.cbe8da37\\x64\\Release\\driver.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "driver",
+                    "source-path": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\include\\driver.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

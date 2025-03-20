@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\include\\driver.ixx",
+        "ProvidedModule": "driver",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

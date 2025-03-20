@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Release\\time.obj",
+            "outputs": [
+                "RPS-Code.cbe8da37\\x64\\Release\\time.h_68966FBF7FCABED7.ifc.dt.module.json",
+                "RPS-Code.cbe8da37\\x64\\Release\\time.h_68966FBF7FCABED7.ifc.dt.d.json",
+                "RPS-Code.cbe8da37\\x64\\Release\\time.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\include\\time.h",
+                    "source-path": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\include\\time.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

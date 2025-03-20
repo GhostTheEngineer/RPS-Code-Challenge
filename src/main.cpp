@@ -1,6 +1,6 @@
-#include "driver.h"
+import driver;
 
 int main() {
-    run();
+    game::run();
     return 0;
 }

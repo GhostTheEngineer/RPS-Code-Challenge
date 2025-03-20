@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\rps-code-challenge\\module.ixx",
+        "ProvidedModule": "test",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
