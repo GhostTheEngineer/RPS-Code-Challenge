@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Debug\\format_C1T5J4O02TH3Z33U.obj",
+            "outputs": [
+                "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\RPS-Code-Challenge\\RPS-Code.cbe8da37\\x64\\Debug\\vc143.pdb",
+                "RPS-Code.cbe8da37\\x64\\Debug\\format_C1T5J4O02TH3Z33U.module.json",
+                "RPS-Code.cbe8da37\\x64\\Debug\\format_C1T5J4O02TH3Z33U.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\format",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\format",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

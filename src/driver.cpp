@@ -7,26 +7,32 @@ import <conio.h>;
 
 namespace game
 {
+enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan = 11, Red = 12, Pink = 13, Yellow = 14, White = 15 };
+
 #ifdef _WIN32
-
-	void ClearScreen() { system("cls"); }
-	//std::cout << "\033[2J\033[1;1H"; //Fake clear screen - scrolls up to make it seem like an update
-
 #include <windows.h>    //for  SetConsoleTextAttribute(hConsole, int);
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-
+	
+	void ClearScreen() { system("cls"); }
+	void SetColor(enum Color color){ SetConsoleTextAttribute(hConsole, color);}
+	//std::cout << "\033[2J\033[1;1H"; //Fake clear screen - scrolls up to make it seem like an update
 
 #else // UNIX:
-	//void ClearScreen() { std::system("clear"); }
-	std::cout << "\n\nUNIX is not supported!\n\n"
-	exit(EXIT_FAILURE);
+	void ClearScreen() { std::system("clear"); }
+
+	void SetColor(enum Color color)
+	{
+		if(color == Color::LightGrey) std::cout << "\033[0m";
+		else if (color == Color::White) std::cout << "\033[37m";
+		else if (color == Color::Red) std::cout << "\033[31m";
+		else if (color == Color::Blue) std::cout << "\033[34m";
+	}
 
 #endif
 
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_ENTER 13
-
 
 	const int MIN_ROUNDS{ 1 };
 	const int MAX_ROUNDS{ 100 };
@@ -37,8 +43,6 @@ namespace game
 	void MenuWeaponList(const int& round, const int& roundLimit, const int& currentMenuPos);
 
 	enum Choice { Rock = 1, Paper, Scissors };
-	enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan = 11, Red = 12, Pink = 13, Yellow = 14, White = 15 };
-
 
 	void run() {
 		//SETUP
@@ -101,7 +105,8 @@ void MenuSelectRounds(int& RoundLimit)
 	int userInput{ 0 };
 
 	do {
-		std::cout << "\033[31m" << "Welcome to Rock, Paper, Scissors!\n\n";
+		SetColor(Color::White);
+		std::cout << "Welcome to Rock, Paper, Scissors!\n\n";
 		std::cout << std::format("How many rounds would you like to play ({}-{})?", MIN_ROUNDS, MAX_ROUNDS);
 		std::cout << ("\nUse arrow keys UP and DOWN, then press ENTER.\n\n");
 		std::cout << std::format("Rounds: {}", RoundLimit);
@@ -158,18 +163,16 @@ int MenuSelectWeapon(const int& round, const int& roundLimit)
 void MenuWeaponList(const int& round, const int& roundLimit, const int& currentMenuPos)
 {
 	ClearScreen();
-	SetConsoleTextAttribute(hConsole, Color::White);
+	SetColor(Color::White);
 	std::cout << std::format("\nROUND: {}\\{}\n\n", round, roundLimit);
 
-	SetConsoleTextAttribute(hConsole, Color::White);
 	std::cout << std::format("{}   Rock   {}", currentMenuPos==Choice::Rock ? ">" : " ", currentMenuPos == Choice::Rock ? "<" : " ") << std::endl;
 	
-	SetConsoleTextAttribute(hConsole, Color::Blue);
+	SetColor(Color::Blue);
 	std::cout << std::format("{}  Paper   {}", currentMenuPos == Choice::Paper ? ">" : " ", currentMenuPos == Choice::Paper ? "<" : " ") << std::endl;
 	
-	SetConsoleTextAttribute(hConsole, Color::Red);
+	SetColor(Color::Red);
 	std::cout << std::format("{} Scissors {}", currentMenuPos == Choice::Scissors ? ">" : " ", currentMenuPos == Choice::Scissors ? "<" : " ") << std::endl;
 }
-
 
 } //namespace game

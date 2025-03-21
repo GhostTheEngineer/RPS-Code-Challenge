@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Debug\\driver.ixx.obj",
+            "outputs": [
+                "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\RPS-Code-Challenge\\RPS-Code.cbe8da37\\x64\\Debug\\vc143.pdb",
+                "RPS-Code.cbe8da37\\x64\\Debug\\",
+                "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\RPS-Code-Challenge\\RPS-Code.cbe8da37\\x64\\Debug\\driver.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "driver",
+                    "source-path": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\include\\driver.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

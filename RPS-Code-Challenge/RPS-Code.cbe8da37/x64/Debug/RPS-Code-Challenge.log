@@ -787,10 +787,10 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 21.03.2025 10:26:22.
-Logging verbosity is set to: Detailed.     1>Project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" on node 2 (Clean target(s)).
+Build started 21.03.2025 10:48:25.
+Logging verbosity is set to: Detailed.     1>Project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" on node 2 (Build target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
-     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_PrepareForClean" depends on it):
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
        Task "MSBuildInternalMessage" skipped, due to false condition; ('$(_InvalidConfigurationMessageSeverity)' != '') was evaluated as ('' != '').
        Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Message"
@@ -808,54 +808,43 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Quodpipax\source\
        Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\obj\' != '' And 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\obj\' != 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\obj\' ).
        Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "_PrepareForClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-         Deleting file "RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\RPS-Code-Challenge.lastbuildstate".
-       Done executing task "Delete".
-     1>Done building target "_PrepareForClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "BeforeClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-     1>Done building target "BeforeClean" in project "RPS-Code-Challenge.vcxproj".
-       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
-                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
-                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
-                           ('' == '')) and
-                          Exists('obj\RPS-Code-Challenge.vcxproj.UnmanagedRegistration.cache')).
-     1>Target "CoreClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-       Task "Delete"
-         File "RPS-Code.cbe8da37\x64\Debug\\TempCA\RPS-Code-Challenge.pdb" doesn't exist. Skipping.
-         File "RPS-Code.cbe8da37\x64\Debug\\TempCA\RPS-Code-Challenge.exe" doesn't exist. Skipping.
-       Done executing task "Delete".
-       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "RPS-Code.cbe8da37\x64\Debug\".
-       Done executing task "FindUnderPath".
-       Task "Delete"
-       Done executing task "Delete".
-       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "MakeDir"
-       Done executing task "MakeDir".
-       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "WriteLinesToFile"
-         Skipping write to file "RPS-Code.cbe8da37\x64\Debug\RPS-Code-Challenge.vcxproj.FileListAbsolute.txt" because content would not change.
-       Done executing task "WriteLinesToFile".
-     1>Done building target "CoreClean" in project "RPS-Code-Challenge.vcxproj".
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Using "SetEnv" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "SetEnv"
+         VSTEL_SolutionSessionID={96CDC09E-3393-4CDD-82D1-2B0B9FDCC132}
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_CurrentSolutionBuildID=1867732530
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_ProjectID={cbe8da37-cb31-4f5e-80a1-c031285b166f}
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_SolutionPath=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.sln
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_MSBuildProjectFullPath=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj
+       Done executing task "SetEnv".
+     1>Done building target "SetTelemetryEnvironmentVariables" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_PrepareForBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\src\driver.cpp;..\src\main.cpp;..\include\driver.ixx'!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "RPS-Code-Challenge.vcxproj".
      1>Target "IgnoreJavaScriptOutputAssembly" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "AssignProjectConfiguration" depends on it):
      1>Done building target "IgnoreJavaScriptOutputAssembly" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "RPS-Code-Challenge.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
      1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "RPS-Code-Challenge.vcxproj".
@@ -879,43 +868,801 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Quodpipax\source\
        Target "_GetProjectReferencePlatformProperties" skipped, due to false condition; ('$(EnableDynamicPlatformResolution)' == 'true'
                             and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true'
                             and '' != '').
-     1>Target "PrepareProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CleanReferencedProjects" depends on it):
+     1>Target "PrepareProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveProjectReferences" depends on it):
      1>Done building target "PrepareProjectReferences" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "CleanReferencedProjects" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
-     1>Done building target "CleanReferencedProjects" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "CleanPublishFolder" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-       Task "RemoveDir" skipped, due to false condition; ('$(ClickOncePublishDir)'=='$(OutputPath)app.publish\' and Exists('$(ClickOncePublishDir)')) was evaluated as ('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\app.publish\'=='C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\app.publish\' and Exists('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\app.publish\')).
-     1>Done building target "CleanPublishFolder" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "AfterClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-     1>Done building target "AfterClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "BeforeCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "BeforeCppClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "CoreCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CppClean" depends on it):
+       Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+     1>Target "ResolveProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('$(_NonExistentProjectReferenceSeverity)' != '') was evaluated as ('' != '').
+     1>Done building target "ResolveProjectReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ResolveProjectReferences" skipped. Previously built successfully.
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+     1>Target "GetFrameworkPaths" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Done building target "GetFrameworkPaths" in project "RPS-Code-Challenge.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('' == '' or '' == '')).
+     1>Done building target "GetReferenceAssemblyPaths" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "AddExternalIncludDirectoriesToPaths" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+     1>Done building target "AddExternalIncludDirectoriesToPaths" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "SetEnv"
+         PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;c:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\nasm\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\WireGuard\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WireSock VPN Client\bin\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\compilers\fasm\fasmw17332\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Git\cmd;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Users\Quodpipax\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Quodpipax\.dotnet\tools;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         INCLUDE=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         EXTERNAL_INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+       Done executing task "SetEnv".
+     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "RPS-Code-Challenge.vcxproj".
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+     1>Target "GetResolvedWinMD" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetResolvedWinMD" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_CheckWindowsSDKInstalled" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
+     1>Done building target "_CheckWindowsSDKInstalled" in project "RPS-Code-Challenge.vcxproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "SetEnv"
+         CAExcludePath=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+       Done executing task "SetEnv".
+       Task "SetEnv" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(VCCodeAnalysisUX)'=='true') was evaluated as ('false'=='true' and 'true'=='true').
+     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "PrepareForBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(PlatformToolset)' == '') was evaluated as ('v143' == '').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' == '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' == '' and '' != 'true' and 'true' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' != '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != '' and '' != 'true' and 'true' != 'true').
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
        Done executing task "MakeDir".
-       Using "CppClean" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
-       Task "CppClean"
-       Done executing task "CppClean".
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\'=='' and '' != 'true' and (''=='v3.5' or ''=='v3.0' or ''=='v2.0' )).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\'=='' and '' != 'true' and 'v143'=='v90').
+       Using "CheckVCToolsetVersion" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "CheckVCToolsetVersion"
+       Done executing task "CheckVCToolsetVersion".
+       Task "VCMessage" skipped, due to false condition; ('$(CheckMFCInstalled)' == 'true' and !Exists($(MFC_KeyFile)) and '$(SpectreLibs)' == '') was evaluated as ('' == 'true' and !Exists(C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64\mfcs140.lib) and '' == '').
+       Task "VCMessage" skipped, due to false condition; ('$(CheckMFCInstalled)' == 'true' and !Exists($(MFC_KeyFile)) and '$(SpectreLibs)' != '') was evaluated as ('' == 'true' and !Exists(C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64\mfcs140.lib) and '' != '').
+       Task "VCMessage" skipped, due to false condition; ('$(CheckATLInstalled)' == 'true' and !Exists($(ATL_KeyFile)) and '$(SpectreLibs)' == '') was evaluated as ('' == 'true' and !Exists(C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64\atls.lib) and '' == '').
+       Task "VCMessage" skipped, due to false condition; ('$(CheckATLInstalled)' == 'true' and !Exists($(ATL_KeyFile)) and '$(SpectreLibs)' != '') was evaluated as ('' == 'true' and !Exists(C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64\atls.lib) and '' != '').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and
+                                                               '$(CheckMSVCComponents)'=='true' and
+                                                               '$(SpectreMitigation)' != '' and
+                                                               '$(SpectreMitigation)' != 'false' and
+                                                               (('$(VC_Target_Library_Platform)' == 'OneCore' and !Exists('$(VC_LibraryPath_VC_OneCore_CurrentPlatform_spectre)')) or
+                                                                ('$(VC_Target_Library_Platform)' == 'Desktop' and !Exists('$(VC_LibraryPath_VC_Desktop_CurrentPlatform_spectre)')))) was evaluated as ('' != 'true' and
+                                                               'true'=='true' and
+                                                               'false' != '' and
+                                                               'false' != 'false' and
+                                                               (('Desktop' == 'OneCore' and !Exists('C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\spectre\onecore\x64')) or
+                                                                ('Desktop' == 'Desktop' and !Exists('C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\spectre\x64')))).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true'  and '$(CheckMSVCComponents)'=='true') was evaluated as (''!='true' and 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\'=='' and '' != 'true'  and 'true'=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as (''!='true' and 'C:\Program Files (x86)\Windows Kits\10\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+       Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+       Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+       C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(539,7): message : Property 'TMP' with value 'C:\Users\QUODPI~1\AppData\Local\Temp' expanded from the environment.
+       C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(540,7): message : Property 'TEMP' with value 'C:\Users\QUODPI~1\AppData\Local\Temp' expanded from the environment.
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(IntDirFullPath.StartsWith($(_Tmp), true, null))' == 'true' or '$(IntDirFullPath.StartsWith($(_Temp), true, null))' == 'true' or '$(OutDirFullPath.StartsWith($(_Tmp), true, null))' == 'true' or '$(OutDirFullPath.StartsWith($(_Temp), true, null))' == 'true')) was evaluated as (''!='true' and '' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
+       Using "VCMessage" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "VCMessage"
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+       Done executing task "VCMessage".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "PrepareForBuild" in project "RPS-Code-Challenge.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\src\driver.cpp;..\src\main.cpp;..\include\driver.ixx'!='' and 'false'=='true' and '' != 'false').
+       Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+     1>Target "ResolveSDKReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ResolveSDKReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+     1>Target "ExpandSDKReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ExpandSDKReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
+     1>Target "ResolveAssemblyReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
+       Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+     1>Done building target "ResolveAssemblyReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and '@(SuggestedBindingRedirects)' != '' and '$(DesignTimeBuild)' != 'true' and '$(BuildingProject)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true' and '' != '' and '' != 'true' and 'true' == 'true').
+       Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+     1>Target "AfterResolveReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "AfterResolveReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+     1>Target "ResolveReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+     1>Done building target "ResolveReferences" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+     1>Target "InitializeBuildStatus" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
-     1>Done building target "CoreCppClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "AfterCppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "AfterCppClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "PGInstrumentedClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CppClean" depends on it):
+       Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Touch"
+         Creating "RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\unsuccessfulbuild".
+       Done executing task "Touch".
+     1>Done building target "InitializeBuildStatus" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildGenerateSources" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "BuildGenerateSourcesTraverse" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "BeforeBuildGenerateSources" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "PreBuildEvent" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreBuildEvent" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "InitializeBuildStatus" skipped. Previously built successfully.
+       Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+     1>Target "_SelectedFiles" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "SelectCustomBuild" depends on it):
+     1>Done building target "_SelectedFiles" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "SelectCustomBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CustomBuild" depends on it):
+     1>Done building target "SelectCustomBuild" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CustomBuild" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuildOutputs.OutputItemType)'!='') was evaluated as (''!='').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "ComputeCustomBuildOutput" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "CustomBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Using "GetOutOfDateItems" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "GetOutOfDateItems"
+       Done executing task "GetOutOfDateItems".
+       Task "GetOutOfDateItems"
+       Done executing task "GetOutOfDateItems".
+       Task "ParallelCustomBuild" skipped, due to false condition; ('@(_ParallelCustomBuild)' != '') was evaluated as ('' != '').
+       Task "CustomBuild" skipped, due to false condition; ('@(_CustomBuild)' != '') was evaluated as ('' != '').
+     1>Done building target "CustomBuild" in project "RPS-Code-Challenge.vcxproj".
+       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
+       Target "_SelectedFiles" skipped. Previously built successfully.
+     1>Target "CopyFileToFolders" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Task "GetOutOfDateItems"
+       Done executing task "GetOutOfDateItems".
+       Task "Copy" skipped, due to false condition; ('@(_OutOfDateCopyFile)' != '') was evaluated as ('' != '').
+     1>Done building target "CopyFileToFolders" in project "RPS-Code-Challenge.vcxproj".
+       Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
+     1>Target "_Xsd" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Xsd" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForMidl" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Midl" depends on it):
+       Task "Makedir"
+       Done executing task "Makedir".
+     1>Done building target "MakeDirsForMidl" in project "RPS-Code-Challenge.vcxproj".
+       Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
+       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "AfterMidl" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "AfterMidl" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_Midl" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Midl" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "AfterBuildGenerateSources" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSources" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSourcesEvent" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Done building target "_BuildGenerateSourcesAction" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "BuildGenerateSources" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildGenerateSources" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
+     1>Target "BuildCompileTraverse" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildCompile" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildCompileTraverse" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "BeforeClCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+     1>Target "ComputeCLInputPDBName" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "ComputeCLInputPDBName" in project "RPS-Code-Challenge.vcxproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "FindReferenceAssembliesForReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+     1>Done building target "FindReferenceAssembliesForReferences" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "GetReferencedVCProjectsInfo" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '').
+     1>Done building target "GetReferencedVCProjectsInfo" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeReferenceCLInput" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "ComputeReferenceCLInput" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('false' != 'true' and 'driver.cpp' != 'driver.cpp' and 'RPS-Code.cbe8da37\x64\Debug\' == 'RPS-Code.cbe8da37\x64\Debug\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('false' != 'true' and 'main.cpp' != 'main.cpp' and 'RPS-Code.cbe8da37\x64\Debug\' == 'RPS-Code.cbe8da37\x64\Debug\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('false' != 'true' and 'driver.ixx' != 'driver.ixx' and 'RPS-Code.cbe8da37\x64\Debug\' == 'RPS-Code.cbe8da37\x64\Debug\').
+     1>Done building target "WarnCompileDuplicatedFilename" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "SetCppLanguageStandardCapabilities" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ComputeStdModulesCompileInputs" depends on it):
+     1>Done building target "SetCppLanguageStandardCapabilities" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeStdModulesCompileInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+       Using "GetLibraryModuleSources" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "GetLibraryModuleSources"
+         Reading library manifest file 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\modules\modules.json' which provides data for library 'microsoft/STL'.
+         Adding module source 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\modules\std.ixx' from library 'microsoft/STL' to be built with this project.
+         Adding module source 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\modules\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+       Done executing task "GetLibraryModuleSources".
+     1>Done building target "ComputeStdModulesCompileInputs" in project "RPS-Code-Challenge.vcxproj".
+       Target "SetCppLanguageStandardCapabilities" skipped. Previously built successfully.
+     1>Target "FixupCLCompileOptions" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "FixupCLCompileOptions" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForCl" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "SetModuleDependencies" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForCl" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "SetModuleDependencies" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Using "SetModuleDependencies" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "SetModuleDependencies"
+         Scanning sources for module dependencies...
+         Microsoft.Build.CPPTasks.CL task found in assembly C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll.
+         Using cached output dependency table built from:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37_MD.tlog\Microsoft.Build.CPPTasks.CL.write.1.tlog
+         Using cached input dependency table built from:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37_MD.tlog\Microsoft.Build.CPPTasks.CL.read.1.tlog
+         Outputs for C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\INCLUDE\DRIVER.IXX|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\DRIVER.CPP|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\MAIN.CPP:
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.MODULE.JSON
+         ..\src\driver.cpp will be compiled because C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp was modified at 21.03.2025 10:48:22.
+         Building with "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe".
+         Source "..\src\driver.cpp" is out of date.
+         Adding source "..\src\driver.cpp".
+         CL.exe will run on 1 out of 3 file(s) in 3 batches.  Startup phase took 14,8323ms.
+         Environment Variables passed to tool:
+           TRACKER_ADDPIDTOTOOLCHAIN=1
+           PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;c:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\nasm\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\WireGuard\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WireSock VPN Client\bin\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\compilers\fasm\fasmw17332\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Git\cmd;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Users\Quodpipax\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Quodpipax\.dotnet\tools;
+           LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64;
+           LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;
+           INCLUDE=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+           CAExcludePath=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+           VS_UNICODE_OUTPUT=2992
+           SARIF_OUTPUT_PIPE=2420
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /FS /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /permissive- /experimental:module /stdIfcDir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\ifc\x64" /ifcOutput "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc" /scanDependencies "RPS-Code.cbe8da37\x64\Debug\\" /Fo"RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj" /Fd"RPS-Code.cbe8da37\x64\Debug\vc143.pdb" /external:W3 /Gd /interface /FC /errorReport:prompt  /TP ..\src\driver.cpp
+         Tracking command:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37_MD.tlog /r C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\DRIVER.CPP /b MSBuildConsole_CancelEvent4b3715c1545a429cb15f86108f8e4dbc  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /FS /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /permissive- /experimental:module /stdIfcDir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\ifc\x64" /ifcOutput "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc" /scanDependencies "RPS-Code.cbe8da37\x64\Debug\\" /Fo"RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj" /Fd"RPS-Code.cbe8da37\x64\Debug\vc143.pdb" /external:W3 /Gd /interface /FC /errorReport:prompt  /TP ..\src\driver.cpp
+         driver.cpp
+         Task '..\src\driver.cpp' took 922ms.
+         Cleanup phase took 10,7461ms.
+         Building header unit Microsoft.Build.CPPTasks.ScanDependencyData as ..\src\driver.cpp imports it.
+         Building header unit Microsoft.Build.CPPTasks.ScanDependencyData as ..\src\driver.cpp imports it.
+         Building header unit Microsoft.Build.CPPTasks.ScanDependencyData as ..\src\driver.cpp imports it.
+         Building header unit Microsoft.Build.CPPTasks.ScanDependencyData as ..\src\driver.cpp imports it.
+         Building header unit Microsoft.Build.CPPTasks.ScanDependencyData as ..\src\driver.cpp imports it.
+         Microsoft.Build.CPPTasks.CL task found in assembly C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll.
+         Write Tracking Logs:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37_MD.tlog\Microsoft.Build.CPPTasks.CL.write.1.tlog
+         Read Tracking Logs:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37_MD.tlog\Microsoft.Build.CPPTasks.CL.read.1.tlog
+         Outputs for C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.22621.0\UCRT\CONIO.H|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\FORMAT|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\IOSTREAM|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\RANDOM|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\REGEX:
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.MODULE.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.MODULE.JSON
+         All outputs are up-to-date.
+         Building with "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe".
+         CL.exe will run on 0 out of 5 file(s) in 5 batches.  Startup phase took 10,4718ms.
+       Done executing task "SetModuleDependencies".
+     1>Done building target "SetModuleDependencies" in project "RPS-Code-Challenge.vcxproj".
+       Target "MakeDirsForCl" skipped. Previously built successfully.
+       Target "_SelectedFiles" skipped. Previously built successfully.
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "ComputeStdModulesCompileInputs" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+       Target "SetModuleDependencies" skipped. Previously built successfully.
+       Target "SelectCustomBuild" skipped. Previously built successfully.
+       Target "SetModuleDependencies" skipped. Previously built successfully.
+     1>Target "SelectClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ClCompile" depends on it):
+     1>Done building target "SelectClCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random;...' != '' and 'false' == 'True').
+     1>Target "ClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'RPS-Code.cbe8da37\x64\Debug\vc143.pdb' != '' and !Exists(RPS-Code.cbe8da37\x64\Debug\vc143.pdb)).
+       Using "MultiToolTask" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "MultiToolTask"
+         Microsoft.Build.CPPTasks.CL task found in assembly C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll.
+         Write Tracking Logs:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\Microsoft.Build.CPPTasks.CL.write.1.tlog
+         Read Tracking Logs:
+         	C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\Microsoft.Build.CPPTasks.CL.read.1.tlog
+         Outputs for C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.22621.0\UCRT\CONIO.H|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\FORMAT|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\IOSTREAM|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\RANDOM|C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\INCLUDE\REGEX|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\INCLUDE\DRIVER.IXX|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\DRIVER.CPP|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\MAIN.CPP:
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.IFC
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.IFC.D.JSON
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.OBJ
+         ..\src\driver.cpp will be compiled because C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp was modified at 21.03.2025 10:48:22.
+         Building with "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe".
+         Source "..\src\driver.cpp" is out of date.
+         Adding source "..\src\driver.cpp" with dependency on "..\include\driver.ixx;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\format;c:\program files (x86)\windows kits\10\include\10.0.22621.0\ucrt\conio.h".
+         Compiling...
+         CL.exe will run on 1 out of 8 file(s) in 8 batches.  Startup phase took 10,1023ms.
+         Environment Variables passed to tool:
+           TRACKER_ADDPIDTOTOOLCHAIN=1
+           PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;c:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\nasm\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\WireGuard\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WireSock VPN Client\bin\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\compilers\fasm\fasmw17332\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Git\cmd;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Python312\;C:\Users\Quodpipax\AppData\Local\Programs\Python\Launcher\;C:\Users\Quodpipax\AppData\Local\Microsoft\WindowsApps;C:\Users\Quodpipax\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Quodpipax\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Quodpipax\.dotnet\tools;
+           LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64;
+           LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\lib\x64;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\lib\x64;
+           INCLUDE=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+           CAExcludePath=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\atlmfc\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+           VS_UNICODE_OUTPUT=2164
+           SARIF_OUTPUT_PIPE=828
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /reference "driver=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.ixx.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream=RPS-Code.cbe8da37\x64\Debug\iostream_DSWHEFD0YVUX4JXO.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex=RPS-Code.cbe8da37\x64\Debug\regex_UBFVH9X6ZW8X8U2Y.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random=RPS-Code.cbe8da37\x64\Debug\random_2OABCQ47UYJYDFI9.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\format=RPS-Code.cbe8da37\x64\Debug\format_C1T5J4O02TH3Z33U.ifc" /headerUnit "c:\program files (x86)\windows kits\10\include\10.0.22621.0\ucrt\conio.h=RPS-Code.cbe8da37\x64\Debug\conio.h_5NG36YPVYNV647QM.ifc" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /FS /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /permissive- /experimental:module /stdIfcDir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\ifc\x64" /ifcOutput "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc" /Fo"RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj" /Fd"RPS-Code.cbe8da37\x64\Debug\vc143.pdb" /sourceDependencies "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc.d.json" /external:W3 /Gd /interface /FC /errorReport:prompt  /TP ..\src\driver.cpp
+         Tracking command:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog /r C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\SRC\DRIVER.CPP /b MSBuildConsole_CancelEvent84f7089e4da44e66a9c1b4977cf6d190  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe"  /c /reference "driver=C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.ixx.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream=RPS-Code.cbe8da37\x64\Debug\iostream_DSWHEFD0YVUX4JXO.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex=RPS-Code.cbe8da37\x64\Debug\regex_UBFVH9X6ZW8X8U2Y.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random=RPS-Code.cbe8da37\x64\Debug\random_2OABCQ47UYJYDFI9.ifc" /headerUnit "c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\format=RPS-Code.cbe8da37\x64\Debug\format_C1T5J4O02TH3Z33U.ifc" /headerUnit "c:\program files (x86)\windows kits\10\include\10.0.22621.0\ucrt\conio.h=RPS-Code.cbe8da37\x64\Debug\conio.h_5NG36YPVYNV647QM.ifc" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /FS /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /permissive- /experimental:module /stdIfcDir "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\ifc\x64" /ifcOutput "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc" /Fo"RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj" /Fd"RPS-Code.cbe8da37\x64\Debug\vc143.pdb" /sourceDependencies "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\driver.cpp.ifc.d.json" /external:W3 /Gd /interface /FC /errorReport:prompt  /TP ..\src\driver.cpp
+         driver.cpp
+     1>C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp(1,14): warning C4844: 'export module driver;' is now the preferred syntax for declaring a module interface
+     1>C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp(11,1): warning C5244: '#include <windows.h>' in the purview of module 'driver' appears erroneous.  Consider moving that directive before the module declaration, or replace the textual inclusion with 'import <windows.h>;'.
+             C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp(1,1):
+             see module 'driver' declaration
+         
+         Task '..\src\driver.cpp' took 1401ms.
+         Cleanup phase took 5,5784ms.
+       Done executing task "MultiToolTask".
+       Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' == 'true') was evaluated as ('Modules' == '' and 'false' == 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and 'Modules' == '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsHeaderUnit'!='CppModule' and 'Modules' == '' and c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsHeaderUnit'!='CppModule' and 'Modules' == '' and c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsHeaderUnit'!='CppModule' and 'Modules' == '' and c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsHeaderUnit'!='CppModule' and 'Modules' == '' and c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\format != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsHeaderUnit'!='CppModule' and 'Modules' == '' and c:\program files (x86)\windows kits\10\include\10.0.22621.0\ucrt\conio.h != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsCppModule'!='CppModule' and 'Modules' == '' and ..\src\driver.cpp != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsCppModule'!='CppModule' and 'Modules' == '' and ..\src\main.cpp != '' and 'false' != 'true').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.CompileAs)'!='CppModule' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' != 'Create' and 'CompileAsCppModule'!='CppModule' and 'Modules' == '' and ..\include\driver.ixx != '' and 'false' != 'true').
+     1>Done building target "ClCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\iostream;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\regex;c:\program files\microsoft visual studio\2022\community\vc\tools\msvc\14.43.34808\include\random;...' != '' and 'false' == 'True').
+       Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
+       Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
+       Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
+     1>Target "AfterClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "AfterClCompile" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_ClCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ClCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+     1>Target "BeforeResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "BeforeResourceCompile" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForResourceCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
+     1>Target "AfterResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "AfterResourceCompile" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_ResourceCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ResourceCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "AfterBuildCompileEvent" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_BuildCompileAction" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildCompile" depends on it):
+     1>Done building target "_BuildCompileAction" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "BuildCompile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildCompile" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
+     1>Target "BuildLinkTraverse" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildLink" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildLinkTraverse" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "ComputeLegacyManifestEmbedding" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "BeforeLink" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "BeforeLink" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeRCOutputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeRCOutputs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeRCGeneratedLinkInputs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeCustomBuildOutput" skipped. Previously built successfully.
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "ComputeStdModulesCompileInputs" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+       Target "SetModuleDependencies" skipped. Previously built successfully.
+       Target "SetModuleDependencies" skipped. Previously built successfully.
+     1>Target "ComputeCLOutputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeCLOutputs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeCLGeneratedLinkInputs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeLinkInputsFromProject" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestInputsTargets" in project "RPS-Code-Challenge.vcxproj".
+       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
+     1>Target "AssignTargetPaths" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+     1>Done building target "AssignTargetPaths" in project "RPS-Code-Challenge.vcxproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+     1>Target "SplitResourcesByCulture" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareResourceNames" depends on it):
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignCulture"
+       Done executing task "AssignCulture".
+     1>Done building target "SplitResourcesByCulture" in project "RPS-Code-Challenge.vcxproj".
+       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Done building target "CreateCustomManifestResourceNames" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "PrepareResourceNames" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "PrepareResourceNames" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForLink" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForLink" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe' != '' and 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe' != 'C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe' != '' and '.exe' != '' and '.exe' != '.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe' != '' and 'RPS-Code-Challenge' != '' and 'RPS-Code-Challenge' != 'RPS-Code-Challenge').
+       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Console' == '' or 'Console' == 'NotSet')).
+     1>Done building target "DoLinkOutputFilesMatch" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "PreLinkEvent" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreLinkEvent" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeLinkSwitches" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Link" depends on it):
+     1>Done building target "ComputeLinkSwitches" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "Link" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+       Using "Link" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "Link"
+         Write Tracking Logs:
+         	RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\link.read.1.tlog
+         Outputs for C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.OBJ:
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\X64\DEBUG\RPS-CODE-CHALLENGE.EXE
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\X64\DEBUG\RPS-CODE-CHALLENGE.PDB
+         Inputs for C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.OBJ:
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UM\X64\ODBCCP32.LIB
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.OBJ
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\LIB\X64\MSVCPRTD.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\LIB\X64\MSVCRTD.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\LIB\X64\OLDNAMES.LIB
+         	C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.43.34808\LIB\X64\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.22621.0\UCRT\X64\UCRTD.LIB
+         	C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\VC143.PDB
+         Source compilation required: input C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ is newer than output C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\X64\DEBUG\RPS-CODE-CHALLENGE.EXE.
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=2420
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe" /INCREMENTAL /ILK:"RPS-Code.cbe8da37\x64\Debug\RPS-Code-Challenge.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.lib" /MACHINE:X64 "RPS-Code.cbe8da37\x64\Debug\iostream_DSWHEFD0YVUX4JXO.obj"
+         "RPS-Code.cbe8da37\x64\Debug\regex_UBFVH9X6ZW8X8U2Y.obj"
+         "RPS-Code.cbe8da37\x64\Debug\random_2OABCQ47UYJYDFI9.obj"
+         "RPS-Code.cbe8da37\x64\Debug\format_C1T5J4O02TH3Z33U.obj"
+         "RPS-Code.cbe8da37\x64\Debug\conio.h_5NG36YPVYNV647QM.obj"
+         "RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj"
+         "RPS-Code.cbe8da37\x64\Debug\main.cpp.obj"
+         "RPS-Code.cbe8da37\x64\Debug\driver.ixx.obj"
+         Tracking command:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog /r "C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\CONIO.H_5NG36YPVYNV647QM.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\DRIVER.IXX.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\FORMAT_C1T5J4O02TH3Z33U.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\IOSTREAM_DSWHEFD0YVUX4JXO.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\MAIN.CPP.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\RANDOM_2OABCQ47UYJYDFI9.OBJ|C:\USERS\QUODPIPAX\SOURCE\REPOS\RPS-CODE-CHALLENGE\RPS-CODE-CHALLENGE\RPS-CODE.CBE8DA37\X64\DEBUG\REGEX_UBFVH9X6ZW8X8U2Y.OBJ" /b MSBuildConsole_CancelEventdad7567c910e48389a182b611cd11d5f  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe" /INCREMENTAL /ILK:"RPS-Code.cbe8da37\x64\Debug\RPS-Code-Challenge.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.lib" /MACHINE:X64 "RPS-Code.cbe8da37\x64\Debug\iostream_DSWHEFD0YVUX4JXO.obj"
+         "RPS-Code.cbe8da37\x64\Debug\regex_UBFVH9X6ZW8X8U2Y.obj"
+         "RPS-Code.cbe8da37\x64\Debug\random_2OABCQ47UYJYDFI9.obj"
+         "RPS-Code.cbe8da37\x64\Debug\format_C1T5J4O02TH3Z33U.obj"
+         "RPS-Code.cbe8da37\x64\Debug\conio.h_5NG36YPVYNV647QM.obj"
+         "RPS-Code.cbe8da37\x64\Debug\driver.cpp.obj"
+         "RPS-Code.cbe8da37\x64\Debug\main.cpp.obj"
+         "RPS-Code.cbe8da37\x64\Debug\driver.ixx.obj"
+       Done executing task "Link".
+       Task "Message"
+         RPS-Code-Challenge.vcxproj -> C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\RPS-Code-Challenge.exe
+       Done executing task "Message".
+       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
+                    true == 'DebugFastLink' and  != '').
+       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
+                    true == 'true' and  != '').
+     1>Done building target "Link" in project "RPS-Code-Challenge.vcxproj".
+       Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
+       Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
+       Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
+     1>Target "AfterLink" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_Link" depends on it):
+     1>Done building target "AfterLink" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_Link" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Link" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_ALink" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_ALink" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
+     1>Target "_Manifest" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_Manifest" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "RegisterOutput" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+     1>Done building target "RegisterOutput" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ResolvedXDCMake" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_XdcMake" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "ResolvedXDCMake" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_XdcMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_XdcMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForXdcMake" in project "RPS-Code-Challenge.vcxproj".
+       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
+     1>Target "_XdcMake" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_XdcMake" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BscMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BscMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForBscMake" in project "RPS-Code-Challenge.vcxproj".
+       Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "_BscMake" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_BscMake" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+     1>Target "BuiltProjectOutputGroup" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CreateRecipeFile" depends on it):
+     1>Done building target "BuiltProjectOutputGroup" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "PrepareResourceNames" skipped. Previously built successfully.
+     1>Target "SatelliteDllsProjectOutputGroup" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CreateRecipeFile" depends on it):
+     1>Done building target "SatelliteDllsProjectOutputGroup" in project "RPS-Code-Challenge.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+     1>Target "MakeDirsForFxc" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForFxc" in project "RPS-Code-Challenge.vcxproj".
+       Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
+     1>Target "ContentFilesProjectOutputGroup" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CreateRecipeFile" depends on it):
+       Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' != '') was evaluated as ('' != '' and '' != '').
+       Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' == '') was evaluated as ('' != '' and '' == '').
+     1>Done building target "ContentFilesProjectOutputGroup" in project "RPS-Code-Challenge.vcxproj".
+       Target "GetReferencedVCProjectsInfo" skipped. Previously built successfully.
+     1>Target "CreateRecipeFile" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+       Using "GenerateDesktopDeployRecipe" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "GenerateDesktopDeployRecipe"
+       Done executing task "GenerateDesktopDeployRecipe".
+     1>Done building target "CreateRecipeFile" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "MSBuildInternalMessage" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "CreateSatelliteAssemblies" in project "RPS-Code-Challenge.vcxproj".
+       Target "CopyLocalNativeReference" skipped, due to false condition; ('$(CopyLocalProjectReference)' == 'true') was evaluated as ('false' == 'true').
+     1>Target "_Appverifier" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Appverifier" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_Deploy" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Deploy" in project "RPS-Code-Challenge.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+       Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
+     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Done building target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+       Using "CallTarget" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "CallTarget"
+       Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
+       Target "_AddOutputPathToGlobalPropertiesToRemove" skipped. Previously built successfully.
+     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in project "RPS-Code-Challenge.vcxproj".
+       Done executing task "CallTarget".
+       Task "CallTarget"
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+       Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
+     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "_GetCopyToOutputDirectoryItemsFromThisProject" in project "RPS-Code-Challenge.vcxproj".
+       Done executing task "CallTarget".
+     1>Done building target "GetCopyToOutputDirectoryItems" in project "RPS-Code-Challenge.vcxproj".
+       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyDifferingSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryIfDifferent)' != '' ) was evaluated as ( '' != '' ).
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CopySourceItemsToOutputDirectory" in project "RPS-Code-Challenge.vcxproj".
+       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+     1>Target "_CheckForCompileOutputs" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CheckForCompileOutputs" in project "RPS-Code-Challenge.vcxproj".
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "PrepareForRun" depends on it):
+       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
+       Task "CopyRefAssembly" skipped, due to false condition; ('$(ProduceReferenceAssembly)' == 'true' and '$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('false' == 'true' and 'true' == 'true' and 'true' != 'true').
+       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
+       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true') was evaluated as ('false'=='true' and '' != 'true' and 'true'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true' and '$(CopyDocumentationFileToOutputDirectory)'=='true') was evaluated as ('false'=='true' and 'true'=='true').
+       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+     1>Done building target "CopyFilesToOutputDirectory" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "PrepareForRun" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "PrepareForRun" in project "RPS-Code-Challenge.vcxproj".
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "PostBuildEvent" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PostBuildEvent" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "_BuildLinkAction" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "BuildLink" depends on it):
+     1>Done building target "_BuildLinkAction" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "BuildLink" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildLink" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "AfterBuild" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+     1>Done building target "AfterBuild" in project "RPS-Code-Challenge.vcxproj".
+       Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "IncrementalClean" depends on it):
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "RPS-Code.cbe8da37\x64\Debug\".
+       Done executing task "FindUnderPath".
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "IncrementalClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\x64\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "RPS-Code.cbe8da37\x64\Debug\".
+       Done executing task "FindUnderPath".
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
        Done executing task "Delete".
-     1>Done building target "PGInstrumentedClean" in project "RPS-Code-Challenge.vcxproj".
-     1>Target "CppClean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Clean" depends on it):
-     1>Done building target "CppClean" in project "RPS-Code-Challenge.vcxproj".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as (''!='').
+     1>Done building target "IncrementalClean" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "TlogCleanup" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Using "CleanupStaleTlogItems" task from assembly "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "CleanupStaleTlogItems"
+       Done executing task "CleanupStaleTlogItems".
+     1>Done building target "TlogCleanup" in project "RPS-Code-Challenge.vcxproj".
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (target "Build" depends on it):
+       Task "Delete"
+         Deleting file "RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\unsuccessfulbuild".
+       Done executing task "Delete".
+       Task "Touch"
+         Touching "RPS-Code.cbe8da37\x64\Debug\RPS-Code.cbe8da37.tlog\RPS-Code-Challenge.lastbuildstate".
+       Done executing task "Touch".
+     1>Done building target "FinalizeBuildStatus" in project "RPS-Code-Challenge.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Clean" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (entry point):
-     1>Done building target "Clean" in project "RPS-Code-Challenge.vcxproj".
-     1>Done Building Project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (Clean target(s)).
+     1>Target "Build" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (entry point):
+     1>Done building target "Build" in project "RPS-Code-Challenge.vcxproj".
+     1>Done Building Project "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (Build target(s)).
 
 Build succeeded.
-    0 Warning(s)
+
+       "C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\RPS-Code-Challenge\RPS-Code-Challenge.vcxproj" (Build target) (1) ->
+       (ClCompile target) -> 
+         C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp(1,14): warning C4844: 'export module driver;' is now the preferred syntax for declaring a module interface
+         C:\Users\Quodpipax\source\repos\RPS-Code-Challenge\src\driver.cpp(11,1): warning C5244: '#include <windows.h>' in the purview of module 'driver' appears erroneous.  Consider moving that directive before the module declaration, or replace the textual inclusion with 'import <windows.h>;'.
+
+    2 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.04
+Time Elapsed 00:00:02.65

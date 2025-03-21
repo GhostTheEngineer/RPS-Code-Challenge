@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Debug\\conio.h_5NG36YPVYNV647QM.obj",
+            "outputs": [
+                "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\RPS-Code-Challenge\\RPS-Code.cbe8da37\\x64\\Debug\\vc143.pdb",
+                "RPS-Code.cbe8da37\\x64\\Debug\\conio.h_5NG36YPVYNV647QM.module.json",
+                "RPS-Code.cbe8da37\\x64\\Debug\\conio.h_5NG36YPVYNV647QM.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\conio.h",
+                    "source-path": "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\conio.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

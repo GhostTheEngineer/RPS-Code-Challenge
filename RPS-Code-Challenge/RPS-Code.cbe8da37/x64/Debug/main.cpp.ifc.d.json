@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\quodpipax\\source\\repos\\rps-code-challenge\\src\\main.cpp",
+        "ProvidedModule": "",
+        "Includes": [],
+        "ImportedModules": [
+            {
+                "Name": "driver",
+                "BMI": "C:\\Users\\Quodpipax\\source\\repos\\RPS-Code-Challenge\\RPS-Code-Challenge\\RPS-Code.cbe8da37\\x64\\Debug\\driver.ixx.ifc"
+            }
+        ],
+        "ImportedHeaderUnits": []
+    }
+}
