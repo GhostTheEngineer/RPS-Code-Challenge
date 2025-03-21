@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "RPS-Code.cbe8da37\\x64\\Debug\\regex.obj",
+            "outputs": [
+                "RPS-Code.cbe8da37\\x64\\Debug\\regex_A6F8ACDC158E0C7B.ifc.dt.module.json",
+                "RPS-Code.cbe8da37\\x64\\Debug\\regex_A6F8ACDC158E0C7B.ifc.dt.d.json",
+                "RPS-Code.cbe8da37\\x64\\Debug\\regex.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\regex",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\regex",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

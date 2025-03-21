@@ -35,6 +35,12 @@
                     "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\format",
                     "lookup-method": "include-angle",
                     "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "conio.h",
+                    "source-path": "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\conio.h",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
                 }
             ]
         }
