@@ -105,7 +105,7 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 
 		// Determine the winner of the round
 		if (playerChoice == computerChoice) {
-			std::cout << "\033[33m"  << "\nIt's a tie!\n" << "\033[37m"; //Yellow color
+			std::cout << "\033[33m"  << "\nIt's a draw!\n" << "\033[37m"; //Yellow color
 			++ties;
 		}
 		else if ((playerChoice == Choice::Rock && computerChoice == Choice::Scissors) ||
@@ -121,8 +121,14 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 
 		++round;
 
+		if ((round > roundLimit) && (playerScore == computerScore)) //Tiebreaker
+		{
+				++roundLimit;
+				std::cout << "\033[33m" << "\nMore rounds added! The winner takes it all!" << "\033[37m";
+		}
+
 		std::cout << "\n\nPress Enter to continue...";
-		std::cin.get(); 
+		std::cin.get();
 
 	} while (round <= roundLimit);
 
@@ -130,7 +136,7 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 	std::cout << "\nFinal Score:\n"
 		<< "  You      [" << "\033[32m" << playerScore << "\033[37m" << "]\n"
 		<< "  Computer [" << "\033[31m" << computerScore << "\033[37m" << "]\n"
-		<< "  Ties     [" << "\033[33m" << ties << "\033[37m" << "]\n"
+		<< "  Draws    [" << "\033[33m" << ties << "\033[37m" << "]\n"
 		<< "\nThanks for playing!\n\n";
 
 	SetColor(Color::LightGrey);
