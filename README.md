@@ -52,8 +52,8 @@ Exceptional contributions will be featured here!
 
 | Contributor | Improvement |
 |------------|------------|
-| @example   | Reduced runtime by 40% |
-| @example2  | Used a more memory-efficient approach |
+| [Quodpipax](https://github.com/Quodpipax)   | [Pull Request](https://github.com/GhostTheEngineer/RPS-Code-Challenge/pull/1) |
+| ...  | ... |
 
 ---
 
