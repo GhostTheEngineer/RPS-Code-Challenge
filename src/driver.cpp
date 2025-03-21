@@ -12,20 +12,58 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 #ifdef _WIN32
 #include <windows.h>    //for  SetConsoleTextAttribute(hConsole, int);
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	
-	void ClearScreen() { system("cls"); }
+
+	void ClearScreen() {
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		COORD topLeft = { 0, 0 };
+		CONSOLE_SCREEN_BUFFER_INFO screen;
+		DWORD written;
+		GetConsoleScreenBufferInfo(hConsole, &screen);
+		FillConsoleOutputCharacterA(hConsole, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
+		FillConsoleOutputAttribute(hConsole, screen.wAttributes, screen.dwSize.X * screen.dwSize.Y, topLeft, &written);
+		SetConsoleCursorPosition(hConsole, topLeft);
+	}
 	void SetColor(enum Color color){ SetConsoleTextAttribute(hConsole, color);}
-	//std::cout << "\033[2J\033[1;1H"; //Fake clear screen - scrolls up to make it seem like an update
 
 #else // UNIX:
+#define RESET   "\033[0m"
+#define BLACK   "\033[30m"      /* Black */
+#define RED     "\033[31m"      /* Red */
+#define GREEN   "\033[32m"      /* Green */
+#define YELLOW  "\033[33m"      /* Yellow */
+#define BLUE    "\033[34m"      /* Blue */
+#define MAGENTA "\033[35m"      /* Magenta */
+#define CYAN    "\033[36m"      /* Cyan */
+#define WHITE   "\033[37m"      /* White */
+
 	void ClearScreen() { std::system("clear"); }
 
 	void SetColor(enum Color color)
 	{
-		if(color == Color::LightGrey) std::cout << "\033[0m";
-		else if (color == Color::White) std::cout << "\033[37m";
-		else if (color == Color::Red) std::cout << "\033[31m";
-		else if (color == Color::Blue) std::cout << "\033[34m";
+		switch (color)
+		{
+		case Color::LightGrey:
+			std::cout << RESET;
+			break;
+		case Color::White:
+			std::cout << WHITE;
+			break;
+		case Color::Red:
+			std::cout << RED;
+			break;
+		case Color::Blue:
+			std::cout << BLUE;
+			break;
+		case Color::Green:
+			std::cout << GREEN;
+			break;
+		case Color::Yellow:
+			std::cout << YELLOW;
+			break;
+		default:
+			std::cout << RESET;
+			break;
+		}
 	}
 
 #endif
@@ -62,41 +100,41 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 
 		// Display choices
 		SetConsoleTextAttribute(hConsole, Color::LightGrey);
-		std::cout << "\nYou chose: " << (playerChoice == Choice::Rock ? "Rock" : playerChoice == Choice::Paper ? "Paper" : "Scissors") << "\n";
-		std::cout << "Computer chose: " << (computerChoice == Choice::Rock ? "Rock" : computerChoice == Choice::Paper ? "Paper" : "Scissors") << "\n";
+		std::cout << "\nYou chose:      " << (playerChoice == Choice::Rock ? "\033[37mRock" : playerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m") << "\n";
+		std::cout << "Computer chose: " << (computerChoice == Choice::Rock ? "\033[37mRock" : computerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m") << "\n";
 
 		// Determine the winner of the round
 		if (playerChoice == computerChoice) {
-			std::cout << "It's a tie!\n";
+			std::cout << "\033[33m"  << "\nIt's a tie!\n" << "\033[37m"; //Yellow color
 			++ties;
 		}
 		else if ((playerChoice == Choice::Rock && computerChoice == Choice::Scissors) ||
 			(playerChoice == Choice::Paper && computerChoice == Choice::Rock) ||
 			(playerChoice == Choice::Scissors && computerChoice == Choice::Paper)) {
-			std::cout << "You win this round!\n";
+			std::cout << "\033[32m" << "\nYou win this round!\n" << "\033[37m";
 			++playerScore;
 		}
 		else {
-			std::cout << "Computer wins this round!\n";
+			std::cout << "\033[31m" << "\nComputer wins this round!\n" << "\033[37m";
 			++computerScore;
 		}
 
 		++round;
 
-		std::cout << "\nPress Enter to continue...";
-		std::cin.get();  // Waits for user input before closing terminal
+		std::cout << "\n\nPress Enter to continue...";
+		std::cin.get(); 
 
 	} while (round <= roundLimit);
 
 	// Display final score
 	std::cout << "\nFinal Score:\n"
-		<< "  You [" << playerScore << "]\n"
-		<< "  Computer [" << computerScore << "]\n"
-		<< "  Ties [" << ties << "]\n"
-		<< "Thanks for playing!\n\n";
+		<< "  You      [" << "\033[32m" << playerScore << "\033[37m" << "]\n"
+		<< "  Computer [" << "\033[31m" << computerScore << "\033[37m" << "]\n"
+		<< "  Ties     [" << "\033[33m" << ties << "\033[37m" << "]\n"
+		<< "\nThanks for playing!\n\n";
 
-	SetConsoleTextAttribute(hConsole, Color::LightGrey);
-	std::cout << "Press Enter to exit...";
+	SetColor(Color::LightGrey);
+	std::cout << "\nPress Enter to exit...";
 	std::cin.get();  // Waits for user input before closing terminal
 }
 
@@ -105,11 +143,12 @@ void MenuSelectRounds(int& RoundLimit)
 	int userInput{ 0 };
 
 	do {
+		ClearScreen(); //Clear the console screen before repeating the loop
 		SetColor(Color::White);
-		std::cout << "Welcome to Rock, Paper, Scissors!\n\n";
-		std::cout << std::format("How many rounds would you like to play ({}-{})?", MIN_ROUNDS, MAX_ROUNDS);
-		std::cout << ("\nUse arrow keys UP and DOWN, then press ENTER.\n\n");
-		std::cout << std::format("Rounds: {}", RoundLimit);
+		std::cout << std::format("Welcome to Rock, Paper, Scissors!\n\n"
+		"How many rounds would you like to play ({}-{})?"
+		"\nUse arrow keys UP and DOWN, then press ENTER.\n\n"
+		"Rounds: {}", MIN_ROUNDS, MAX_ROUNDS, RoundLimit);
 		userInput = _getch();
 
 		switch (userInput)
@@ -125,7 +164,6 @@ void MenuSelectRounds(int& RoundLimit)
 		default:
 			continue;
 		}
-		ClearScreen(); //Clear the console screen before repeating the loop
 	} while (KEY_ENTER != userInput);
 }
 
