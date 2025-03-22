@@ -1,9 +1,8 @@
 module driver;
-import <iostream>;
-import <regex>;
-import <random>;
-import <format>;
-import <conio.h>;
+import <random>;   //default_random_engine
+import <conio.h>; //_getch
+import <cstdio>; //puts, getchar
+import <print>; //println
 
 namespace game
 {
@@ -43,25 +42,25 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 		switch (color)
 		{
 		case Color::LightGrey:
-			std::cout << RESET;
+			std::puts(RESET);
 			break;
 		case Color::White:
-			std::cout << WHITE;
+			std::puts(WHITE);
 			break;
 		case Color::Red:
-			std::cout << RED;
+			std::puts(RED);
 			break;
 		case Color::Blue:
-			std::cout << BLUE;
+			std::puts(BLUE);
 			break;
 		case Color::Green:
-			std::cout << GREEN;
+			std::puts(GREEN);
 			break;
 		case Color::Yellow:
-			std::cout << YELLOW;
+			std::puts(YELLOW);
 			break;
 		default:
-			std::cout << RESET;
+			std::puts(RESET);
 			break;
 		}
 	}
@@ -75,7 +74,6 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 	const int MIN_ROUNDS{ 1 };
 	const int MAX_ROUNDS{ 100 };
 
-	//void ClearScreen();
 	void MenuSelectRounds(int& RoundLimit);
 	int MenuSelectWeapon(const int& round, const int& roundLimit);
 	void MenuWeaponList(const int& round, const int& roundLimit, const int& currentMenuPos);
@@ -99,23 +97,23 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 		int computerChoice = distribution(generator);
 
 		// Display choices
-		SetConsoleTextAttribute(hConsole, Color::LightGrey);
-		std::cout << "\nYou chose:      " << (playerChoice == Choice::Rock ? "\033[37mRock" : playerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m") << "\n";
-		std::cout << "Computer chose: " << (computerChoice == Choice::Rock ? "\033[37mRock" : computerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m") << "\n";
+		SetColor(Color::White);
+		std::println("\nYou chose:      {}", (playerChoice == Choice::Rock ? "Rock" : playerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m"));
+		std::println("Computer chose: {}", (computerChoice == Choice::Rock ? "Rock" : computerChoice == Choice::Paper ? "\033[34mPaper\033[37m" : "\033[31mScissors\033[37m"));
 
 		// Determine the winner of the round
 		if (playerChoice == computerChoice) {
-			std::cout << "\033[33m"  << "\nIt's a draw!\n" << "\033[37m"; //Yellow color
+			std::puts("\033[33m\nIt's a draw!\n\033[37m"); //Yellow color "It's a draw!" then White Color
 			++ties;
 		}
 		else if ((playerChoice == Choice::Rock && computerChoice == Choice::Scissors) ||
 			(playerChoice == Choice::Paper && computerChoice == Choice::Rock) ||
 			(playerChoice == Choice::Scissors && computerChoice == Choice::Paper)) {
-			std::cout << "\033[32m" << "\nYou win this round!\n" << "\033[37m";
+			std::puts("\033[32m\nYou win this round!\n\033[37m"); //Green color "You win this round!" then White Color
 			++playerScore;
 		}
 		else {
-			std::cout << "\033[31m" << "\nComputer wins this round!\n" << "\033[37m";
+			std::puts("\033[31m\nComputer wins this round!\n\033[37m"); //Red color "Computer wins this round!" then White Color
 			++computerScore;
 		}
 
@@ -124,24 +122,24 @@ enum Color { Black = 0, LightGrey = 7, DarkGrey = 8, Blue = 9, Green = 10, Cyan 
 		if ((round > roundLimit) && (playerScore == computerScore)) //Tiebreaker
 		{
 				++roundLimit;
-				std::cout << "\033[33m" << "\nMore rounds added! The winner takes it all!" << "\033[37m";
+				std::puts("\033[33m\nMore rounds added! The winner takes it all!\033[37m"); //Yellow color "More rounds added! ..." then White Color
 		}
 
-		std::cout << "\n\nPress Enter to continue...";
-		std::cin.get();
+		std::puts("\nPress Enter to continue...");
+		std::getchar();
 
 	} while (round <= roundLimit);
 
 	// Display final score
-	std::cout << "\nFinal Score:\n"
-		<< "  You      [" << "\033[32m" << playerScore << "\033[37m" << "]\n"
-		<< "  Computer [" << "\033[31m" << computerScore << "\033[37m" << "]\n"
-		<< "  Draws    [" << "\033[33m" << ties << "\033[37m" << "]\n"
-		<< "\nThanks for playing!\n\n";
+	std::println("\nFinal Score:\n"
+		"  You      [\033[32m{}\033[37m]\n" //Green  Color
+		"  Computer [\033[31m{}\033[37m]\n" //Red    Color
+		"  Draws    [\033[33m{}\033[37m]\n" //Yellow Color
+		"\nThanks for playing!\n", playerScore, computerScore, ties);
 
 	SetColor(Color::LightGrey);
-	std::cout << "\nPress Enter to exit...";
-	std::cin.get();  // Waits for user input before closing terminal
+	std::puts("\nPress Enter to exit...");
+	std::getchar();  // Waits for user input before closing terminal
 }
 
 void MenuSelectRounds(int& RoundLimit)
@@ -151,10 +149,12 @@ void MenuSelectRounds(int& RoundLimit)
 	do {
 		ClearScreen(); //Clear the console screen before repeating the loop
 		SetColor(Color::White);
-		std::cout << std::format("Welcome to Rock, Paper, Scissors!\n\n"
-		"How many rounds would you like to play ({}-{})?"
-		"\nUse arrow keys UP and DOWN, then press ENTER.\n\n"
-		"Rounds: {}", MIN_ROUNDS, MAX_ROUNDS, RoundLimit);
+
+		std::println("Welcome to Rock, Paper, Scissors!\n\n"
+			"How many rounds would you like to play ({}-{})?"
+			"\nUse arrow keys UP and DOWN, then press ENTER.\n\n"
+			"Rounds: {}", MIN_ROUNDS, MAX_ROUNDS, RoundLimit);
+
 		userInput = _getch();
 
 		switch (userInput)
@@ -172,7 +172,6 @@ void MenuSelectRounds(int& RoundLimit)
 		}
 	} while (KEY_ENTER != userInput);
 }
-
 
 int MenuSelectWeapon(const int& round, const int& roundLimit)
 {
@@ -203,20 +202,15 @@ int MenuSelectWeapon(const int& round, const int& roundLimit)
 	return currentMenuPos;
 }
 
-
 void MenuWeaponList(const int& round, const int& roundLimit, const int& currentMenuPos)
 {
 	ClearScreen();
 	SetColor(Color::White);
-	std::cout << std::format("\nROUND: {}\\{}\n\n", round, roundLimit);
-
-	std::cout << std::format("{}   Rock   {}", currentMenuPos==Choice::Rock ? ">" : " ", currentMenuPos == Choice::Rock ? "<" : " ") << std::endl;
-	
+	std::println("\nROUND: {}\\{}\n", round, roundLimit);
+	std::println("{}   Rock   {}", currentMenuPos==Choice::Rock ? ">" : " ", currentMenuPos == Choice::Rock ? "<" : " ");
 	SetColor(Color::Blue);
-	std::cout << std::format("{}  Paper   {}", currentMenuPos == Choice::Paper ? ">" : " ", currentMenuPos == Choice::Paper ? "<" : " ") << std::endl;
-	
+	std::println("{}  Paper   {}", currentMenuPos == Choice::Paper ? ">" : " ", currentMenuPos == Choice::Paper ? "<" : " ");
 	SetColor(Color::Red);
-	std::cout << std::format("{} Scissors {}", currentMenuPos == Choice::Scissors ? ">" : " ", currentMenuPos == Choice::Scissors ? "<" : " ") << std::endl;
+	std::println("{} Scissors {}", currentMenuPos == Choice::Scissors ? ">" : " ", currentMenuPos == Choice::Scissors ? "<" : " ");
 }
-
 } //namespace game
